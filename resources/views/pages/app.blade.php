@@ -8,11 +8,12 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    <h1 class="mb-5">
-        ciao
-    </h1>
-    <p>
-        hello world
-    </p>
+    <ul>
+        @foreach ($movies as $movie)
+        <li>
+            {{ $movie->title }}
+        </li>
+        @endforeach
+    </ul>
 </body>
 </html>
